@@ -1,0 +1,419 @@
+<html>
+<head>
+	<title></title>
+	<link href="./css/CRM_仕訳.css" rel="stylesheet" title="Green styles" />
+</head>
+<body>
+<div style="float: left; text-align: center; font-size:12px; border-bottom: solid 1px black; width: 17%; ">発行番号 $SHIWAKE_SHIWAKE_TKS_HAKKOUNO$</div>
+
+<div style="float: right; text-align: center; font-size:12px; width: 15%; height: 30px;" valign="bottom">##YYYY-MM-DD##</div>
+
+<p style="text-align:center; margin-bottom: 20px;"><span style="font-size: 25; border-bottom: solid 2px black; ">&nbsp;仕　訳　表&nbsp; </span></p>
+
+<div style="clear: both; margin-bottom: 0px"></div>
+
+<div class="frame1">
+<table>
+	<tbody>
+		<tr>
+			<td class="sell-name" colspan="3">得 意 先 名</td>
+			<td class="sell-name" style="width: 80px;">図　番</td>
+			<td style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_ZUBAN$</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width: 60px; padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_TOKUISAKICD$</td>
+			<td style="width: 250px; padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_TOKUISAKIMEI$</td>
+			<td rowspan="2" style="width: 115px;"></td>
+			<td class="sell-name">品　名</td>
+			<td style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_HINMEI$</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="sell-name">サ イ ズ</td>
+			<td style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_SAIZU$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame2">
+<table>
+	<tbody>
+		<tr>
+			<td class="sell-name" style="width: 110px;">数　量</td>
+			<td class="right" style="width: 130px; text-align: right; padding-right: 3px;">$SHIWAKE_SHIWAKE_TKS_SUURYOU$</td>
+			<td class="sell-name" style="width: 110px;">単　価</td>
+			<td class="right" style="width: 130px; text-align: right; padding-right: 3px;">$SHIWAKE_SHIWAKE_TKS_TANKA$</td>
+			<td class="sell-name" style="width: 110px;">金　額</td>
+			<td class="right" style="text-align: right; padding-right: 3px;">$SHIWAKE_SHIWAKE_TKS_KINGAKU$</td>
+		</tr>
+		<tr>
+			<td class="sell-name" colspan="6">社 内 加 工</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame3">
+<table>
+	<tbody>
+		<tr>
+			<td class="sell-name" colspan="2">仕 訳 名</td>
+			<td class="sell-name" style="width: 90px;">売 上 金 額</td>
+			<td class="sell-name" colspan="3">備　考</td>
+		</tr>
+		<tr>
+			<td style="width: 50px; padding-left: 5px;">0100</td>
+			<td style="width: 115px; padding-left: 5px;">Cr</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_1$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_1$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0200</td>
+			<td style="padding-left: 5px;">Ni</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_2$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_2$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0300</td>
+			<td style="padding-left: 5px;">研削</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_3$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_3$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0400</td>
+			<td style="padding-left: 5px;">研磨</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_4$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_4$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0500</td>
+			<td style="padding-left: 5px;">治具</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_6$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_6$</td>
+		</tr>
+		<!-- add start 20241111 -->
+		<tr>
+			<td style="padding-left: 5px;">0600</td>
+			<td style="padding-left: 5px;">サンド</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_7$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_7$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0700</td>
+			<td style="padding-left: 5px;">ホーニング</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_8$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_8$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0800</td>
+			<td style="padding-left: 5px;">MS</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_9$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_9$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">0900</td>
+			<td style="padding-left: 5px;">検査</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_10$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_10$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1000</td>
+			<td style="padding-left: 5px;">内部洗浄</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_11$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_11$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1100</td>
+			<td style="padding-left: 5px;">軸部品解体組込</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_12$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_12$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1200</td>
+			<td style="padding-left: 5px;">塗装</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_13$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_13$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1300</td>
+			<td style="padding-left: 5px;">運賃</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_14$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_14$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1400</td>
+			<td style="padding-left: 5px;">木箱</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_15$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_15$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1500</td>
+			<td style="padding-left: 5px;">バランス</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_16$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_16$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1600</td>
+			<td style="padding-left: 5px;">HB</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_17$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_17$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1700</td>
+			<td style="padding-left: 5px;">埋金</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_18$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_18$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1800</td>
+			<td style="padding-left: 5px;">調査</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_19$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_19$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">1900</td>
+			<td style="padding-left: 5px;">諸経費</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_20$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_20$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">2000</td>
+			<td style="padding-left: 5px;">コンサル</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_21$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_21$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">2100</td>
+			<td style="padding-left: 5px;">設計・製図</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_22$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_22$</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 5px;">2200</td>
+			<td style="padding-left: 5px;">その他</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_TANKA_5$</td>
+			<td class="left" colspan="3">$SHIWAKE_SHIWAKE_TKS_SYA_BIKOU_5$</td>
+		</tr>
+		<!-- add end 20241111 -->
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="sell-name">社内加工計</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_SYA_KEI$</td>
+			<td colspan="3"></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame3">
+<table>
+	<tbody>
+		<tr>
+			<td class="sell-name" colspan="6">外 注 製 作 ・ 加 工</td>
+		</tr>
+		<tr>
+			<td class="sell-name" colspan="2">仕 訳 名</td>
+			<td class="sell-name">原 価 単 価</td>
+			<td class="sell-name" style="width: 50px;">乗率％</td>
+			<td class="sell-name" style="width: 90px;">売 上 金 額</td>
+			<td class="sell-name">注文No / 注文先</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_1$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_1$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_1$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_1$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_1$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_2$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_2$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_2$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_2$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_2$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_3$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_3$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_3$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_3$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_3$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_4$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_4$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_4$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_4$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_4$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_5$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_5$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_5$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_5$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_5$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_6$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_6$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_6$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_6$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_6$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_7$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_7$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_7$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_7$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_7$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_8$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_8$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_8$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_8$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_8$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_9$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_9$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_9$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_9$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_9$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_10$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_10$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_10$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_10$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_10$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_11$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_11$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_11$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_11$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_11$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_12$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_12$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_12$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_12$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_12$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_13$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_13$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_13$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_13$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_13$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_14$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_14$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_14$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_14$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_14$</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left: 5px;">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMON_15$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GTANKA_15$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_RITSU_15$</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_TANKA_15$</td>
+			<td class="left">$SHIWAKE_SHIWAKE_TKS_GAI_TYUUMONSAKI_15$</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="sell-name" colspan="2">外注製作・加工計</td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_GKEI$</td>
+			<td></td>
+			<td class="right">$SHIWAKE_SHIWAKE_TKS_GAI_KEI$</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</body>
+</html>
