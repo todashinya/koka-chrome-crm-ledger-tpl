@@ -1,0 +1,396 @@
+<html>
+<head>
+	<title>03_営業管理_作業・工程・納期(工程管理)</title>
+	<link href="./css/CRM_作業.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div style="width: 100%; height: 73px; ">
+<table style="margin-bottom: 3px;">
+	<tbody>
+		<tr>
+			<td style="width: 54px; height: 15px;">1課</td>
+			<td style="width: 54px;">2課</td>
+			<td style="width: 54px;">3課</td>
+			<td style="width: 54px;">研</td>
+			<td class="bottom-none" style="width: 55px;">G</td>
+			<td class="none-line" rowspan="2" style="width: 230px; height: 60px; font-size: 25px;">作業・工程・納期</td>
+			<td style="width: 54px;">生産</td>
+			<td style="width: 54px;">工務部</td>
+			<td style="width: 54px;">受入検査</td>
+			<td class="bottom-none">営業</td>
+		</tr>
+		<tr>
+			<td class="right-none" rowspan="3" style="height: 58px;"></td>
+			<td class="right-none" rowspan="3"></td>
+			<td class="right-none" rowspan="3"></td>
+			<td class="right-none" rowspan="3"></td>
+			<td class="sell" rowspan="3"></td>
+			<td class="right-none" rowspan="3"></td>
+			<td class="right-none" rowspan="3"></td>
+			<td class="right-none" rowspan="3">[CUSTOMFUNCTION|jin_query_user|Users|$PROJECT_CF_1634$|name|CUSTOMFUNCTION]</td>
+			<td class="sell" rowspan="3">[CUSTOMFUNCTION|jin_query_user|Users|$PROJECT_ASSIGNED_USER_ID$|name|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td class="top-bottom-b" style="height: 3px;"></td>
+		</tr>
+		<tr>
+			<td style="height: 30px; font-size: 15px;">[CUSTOMFUNCTION|datefmt|$R_CF_1632_CF_983$|Y年m月d日|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame1">
+<table>
+	<tbody>
+		<tr>
+			<td class="right-line" style="width: 80px; height:26px;">加工種別</td>
+			<td class="top-none" style="width: 130px; text-align: left; padding-left: 5px;">$R_CF_1632_CF_875$</td>
+			<td class="top-none" style="width: 90px;">商品コード</td>
+			<td class="top-none" style="width: 50px;">$R_CF_1632_CF_879$</td>
+			<td class="top-none" style="width: 120px; text-align: left; padding-left: 5px;">$R_CF_1632_CF_877$</td>
+			<td class="top-none" style="width: 65px;">担当者</td>
+			<td class="top-none" style="width: 40px;">$USERS_USER_NO$</td>
+			<td class="none-line">$USERS_FIRST_NAME$</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tbody>
+		<tr>
+			<td class="top-line" rowspan="4" style="width: 80px;">得意先名</td>
+			<td rowspan="2" style="width: 60px;">$R_LINKTOACCOUNTSCONTACTS_ACCOUNT_NO$</td>
+			<td colspan="2" style="height: 30px; text-align: left; padding-left: 5px;">$R_CF_1632_ACCOUNT_ID$　　$R_LINKTOACCOUNTSCONTACTS_CF_1316$</td>
+			<td>注文番号</td>
+		</tr>
+		<tr>
+			<td style="width: 270px; height:30px; text-align: left; padding-left:5px;">〒$R_LINKTOACCOUNTSCONTACTS_BILL_CODE$　$R_LINKTOACCOUNTSCONTACTS_BILL_STATE$$R_LINKTOACCOUNTSCONTACTS_BILL_CITY$$R_LINKTOACCOUNTSCONTACTS_BILL_STREET$</td>
+			<td style="width: 150px;">[CUSTOMFUNCTION|jin_query_byfield|Contacts|vtiger_contactdetails|lastname|$R_CF_1632_CONTACT_ID$|lastname|CUSTOMFUNCTION]</td>
+			<td>$R_CF_1632_VTIGER_PURCHASEORDER$</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 26px; text-align: left; padding-left:5px;">TEL： $R_LINKTOACCOUNTSCONTACTS_PHONE$　　　FAX： $R_LINKTOACCOUNTSCONTACTS_FAX$　　　E-MAIL： [CUSTOMFUNCTION|jin_query_byfield|Contacts|vtiger_contactdetails|lastname|$R_CF_1632_CONTACT_ID$|email|CUSTOMFUNCTION]</td>
+			<td>見積書番号</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 26px; text-align: left; padding-left:5px;">$R_CF_1632_CF_1304$</td>
+			<td>$R_CF_1632_CF_1554$</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tbody>
+		<tr>
+			<td class="top-line" style="width: 80px; height:26px;">取引種別</td>
+			<td style="width: 280px; padding-left: 5px;">[CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_889$|==|&quot;メーカー&quot;|●メーカー　〇ユーザー　〇商社　〇その他||CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_889$|==|&quot;ユーザー&quot;|〇メーカー　●ユーザー　〇商社　〇その他||CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_889$|==|&quot;商社&quot;|〇メーカー　〇ユーザー　●商社　〇その他||CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_889$|==|&quot;その他&quot;|〇メーカー　〇ユーザー　〇商社　●その他||CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_889$|==|&quot;&quot;|〇メーカー　〇ユーザー　〇商社　〇その他||CUSTOMFUNCTION]</td>
+			<td style="width: 160px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_891$|==|&quot;国内&quot;|●国内&nbsp;&nbsp;|○国内&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_891$|==|&quot;海外&quot;|●海外|○海外|CUSTOMFUNCTION]</td>
+			<td>[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_933$|==|&quot;配達&quot;|●配達&nbsp;&nbsp;|○配達&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_933$|==|&quot;来社&quot;|●来社&nbsp;&nbsp;|○来社&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_933$|==|&quot;発送&quot;|●発送|○発送|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tbody>
+		<tr>
+			<td class="top-line" style="width: 80px; height:26px;">図番</td>
+			<td colspan="3" style=" width: 340px; text-align: left; padding-left: 5px;">$R_CF_1632_CF_893$</td>
+			<td colspan="2">数量</td>
+			<td colspan="4" style="width: 72px;">品名備考</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="height:26px;">品名</td>
+			<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_SUBJECT$</td>
+			<td class="right-none" rowspan="2" style="width: 40px; text-align: right; padding-right: 3px;">$R_CF_1632_CF_1042$</td>
+			<td class="right-none" rowspan="2" style="width: 30px">$R_CF_1632_CF_1080$</td>
+			<td class="right-bottome-none" colspan="4" rowspan="6"></td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px; height:26px;">サイズ</td>
+			<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_895$</td>
+		</tr>
+		<tr>
+			<td class="top-line" rowspan="2" style="width: 80px;">めっき厚さ</td>
+			<td style="width: 60px;"></td>
+			<td class="top-line" style="width: 110px; height:26px; text-align: right; padding-right: 3px;">$R_CF_1632_CF_903$ Cr残</td>
+			<td style="width: 140px; height:26px; text-align: right; padding-right: 3px;">$R_CF_1632_CF_905$ Ni残</td>
+			<td colspan="2" style="width: 77px; padding-left: 5px;">[CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_901$|==|&quot;はい&quot;|■剥し|□剥し|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td style="height:26px; padding-right: 3px;">材質</td>
+			<td colspan="4" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_907$</td>
+		</tr>
+		<tr>
+			<td class="top-line" rowspan="3" style="width: 80px; border-bottom-style: hidden;"><span style="vertical-align:-300%">仕上種類</span></td>
+			<td colspan="5" style="height:26px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;1号&quot;|■1号&nbsp;&nbsp;|□1号&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;2号&quot;|■2号&nbsp;&nbsp;|□2号&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;上&quot;|■上&nbsp;&nbsp;|□上&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;下&quot;|■下&nbsp;&nbsp;|□下&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;3号&quot;|■3号&nbsp;&nbsp;|□3号&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;1G&quot;|■1G&nbsp;&nbsp;|□1G&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_951$|==|&quot;2G&quot;|■2G|□2G|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td colspan="5" style="height:26px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.05S&quot;|■0.05S&nbsp;&nbsp;|□0.055&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.1S&quot;|■0.1S&nbsp;&nbsp;|□0.1S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.2S&quot;|■0.2S&nbsp;&nbsp;|□0.2S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.4S&quot;|■0.4S&nbsp;&nbsp;|□0.4S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.6S&quot;|■0.6S&nbsp;&nbsp;|□0.6S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;0.8S&quot;|■0.8S&nbsp;&nbsp;|□0.8S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;1.6S&quot;|■1.6S&nbsp;&nbsp;|□1.6S&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;BF&quot;|■BF&nbsp;&nbsp;|□BF&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_911$|==|&quot;VE&quot;|■VE|□VE|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td colspan="9" style="height: 26px;"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tbody>
+		<tr>
+			<td class="none-line" style="width: 80px;"></td>
+			<td style="width: 80px; height:26px;">MS処理</td>
+			<td style="width: 200px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_913$|==|&quot;MSⅠ&quot;|■MSⅠ&nbsp;&nbsp;&nbsp;&nbsp;|□MSⅠ&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_913$|==|&quot;MSⅡ&quot;|■MSⅡ&nbsp;&nbsp;&nbsp;&nbsp;|□MSⅡ&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_913$|==|&quot;MSⅢ&quot;|■MSⅢ|□MSⅢ|CUSTOMFUNCTION]</td>
+			<td style="width: 86.5px;">HB回数</td>
+			<td style="text-align: right; padding-right: 3px;">$R_CF_1632_CF_915$ 回</td>
+			<td style="width: 180px;">仕上寸法</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame2">
+<table>
+	<tbody>
+		<tr>
+			<td class="top-line" rowspan="2" style="width: 80px;">梨地関係</td>
+			<td colspan="4" style=" height:26px;">仕様</td>
+			<td style="width: 70px;">粗さ</td>
+			<td colspan="2" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_919$</td>
+			<td rowspan="9" style="width: 180px;">
+			<table class="tab2">
+				<tbody>
+					<tr>
+						<td class="none-line" style="width: 60px; height:30px;">胴部外径</td>
+						<td class="left-line" colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_955$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:30px;">軸径</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_957$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height: 20px;">円筒度</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_959$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">真円度</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_961$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">フレ</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_963$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">静バランス</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_1064$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">動バランス</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">$R_CF_1632_CF_1062$</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">図面</td>
+						<td colspan="3" style="text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_969$|==|&quot;有り&quot;|●有|○有|CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_969$|==|&quot;無し&quot;|●無|○無し|CUSTOMFUNCTION]</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">希望納期</td>
+						<td colspan="2">$R_CF_1632_CF_971$</td>
+						<td style="width:46"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">決定納期</td>
+						<td colspan="2">$R_CF_1632_CF_975$</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">1G</td>
+						<td colspan="2">$R_CF_1632_CF_979$</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:20px;">2G</td>
+						<td colspan="2">$R_CF_1632_CF_981$</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="top-line" colspan="4" style="height:20px;">注文No</td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td style="width: 60;"></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td></td>
+						<td colspan="2"></td>
+					</tr>
+					<tr>
+						<td class="top-line" style="height:19px;"></td>
+						<td class="right-botton-none"></td>
+						<td class="right-bottom-none" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" style="height:26px;">$R_CF_1632_CF_917$</td>
+			<td>光沢度</td>
+			<td colspan="2" style=" text-align: left; padding-left: 5px;">$R_CF_1632_CF_921$</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">ベーキング</td>
+			<td style="width: 22px; height:26px;">前</td>
+			<td style="width: 130px; text-align: right; padding-right: 3px;">$R_CF_1632_CF_1204$ ℃ $R_CF_1632_CF_1206$ H</td>
+			<td style="width: 20px">後</td>
+			<td colspan="2" style="width: 130px; text-align: right; padding-right: 3px;">$R_CF_1632_CF_1208$ ℃ $R_CF_1632_CF_1210$ H</td>
+			<td style="width: 70px;">客先使用<br />
+			温度</td>
+			<td style="text-align: right; padding-right: 3px;">$R_CF_1632_CF_927$&nbsp; ℃</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">研削</td>
+			<td colspan="3" style="height:26px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_929$|==|&quot;1G&quot;|■1G&nbsp;&nbsp;&nbsp;&nbsp;|□1G&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_929$|==|&quot;2G&quot;|■2G&nbsp;&nbsp;&nbsp;&nbsp;|□2G&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_929$|==|&quot;J1G&quot;|■J1G&nbsp;&nbsp;&nbsp;&nbsp;|□J1G&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_929$|==|&quot;J2G&quot;|■J2G&nbsp;&nbsp;&nbsp;&nbsp;|□J2G&nbsp;&nbsp;&nbsp;&nbsp;|CUSTOMFUNCTION]</td>
+			<td style="width: 50px;">検査表</td>
+			<td style="text-align: right; padding-right: 3px;">$R_CF_1632_CF_931$部 作成</td>
+			<td>立会検査</td>
+			<td style="text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_941$|==|&quot;有&quot;|●有&nbsp;&nbsp;|○有&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_941$|==|&quot;無&quot;|●無|○無|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">付属部品</td>
+			<td colspan="7" style="height:27px; text-align: left; padding-left: 5px;">$R_CF_1632_CF_935$</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">梱包</td>
+			<td colspan="7" style="height:26px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;木箱有&quot;|■木箱有&nbsp;&nbsp;|□木箱有&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;木箱製作(社内)&quot;|■木箱製作(社内)&nbsp;&nbsp;|□木箱製作(社内)&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;木箱製作(外注)&quot;|■木箱製作(外注)&nbsp;&nbsp;|□木箱製作(外注)&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;鉄箱&quot;|■鉄箱&nbsp;&nbsp;|□鉄箱&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;受台&quot;|■受台&nbsp;&nbsp;|□受台&nbsp;&nbsp;|CUSTOMFUNCTION] [CUSTOMFUNCTION|jin_search|$R_CF_1632_CF_937$|==|&quot;その他&quot;|■その他|□その他|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">木箱</td>
+			<td colspan="7" style="height:26px; text-align: left; padding-left: 5px;">$R_CF_1632_CF_1552$</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="width: 80px;">内部洗浄</td>
+			<td colspan="2" style="height:27px; text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_1272$|==|&quot;有&quot;|●有|○有|CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_1272$|==|&quot;無&quot;|●無|○無|CUSTOMFUNCTION]</td>
+			<td colspan="2">内部乾燥</td>
+			<td colspan="2" style="text-align: left; padding-left: 5px;">[CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_1274$|==|&quot;有&quot;|●有|○有|CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$R_CF_1632_CF_1274$|==|&quot;無&quot;|●無|〇無|CUSTOMFUNCTION]</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="top-line" colspan="8" style="height:223px; text-align: left; padding: 5px;" valign="top">$R_CF_1632_DESCRIPTION$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame">
+<table style="width: 100%;">
+	<tbody>
+		<tr>
+			<td class="top-line" style=" width: 66.7px; height: 19px;">入荷予定日</td>
+			<td style=" width: 66.7px;">入荷日</td>
+			<td style=" width: 66.7px;">加工開始日</td>
+			<td style=" width: 66.7px;">完成希望日</td>
+			<td style=" width: 66.7px;">完成予定日</td>
+			<td style=" width: 66.7px;">完成日</td>
+			<td style=" width: 67px;">出荷日</td>
+			<td style=" width: 67px;">伝票処理日</td>
+			<td style=" width: 61.5px;"></td>
+			<td style=" width: 60px;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="top-line" style="height: 19px;">$R_CF_1632_CF_985$</td>
+			<td>$R_CF_1632_CF_987$</td>
+			<td>$R_CF_1632_CF_989$</td>
+			<td>$R_CF_1632_CF_991$</td>
+			<td>$R_CF_1632_CF_993$</td>
+			<td>$R_CF_1632_CF_995$</td>
+			<td>$R_CF_1632_CF_997$</td>
+			<td>$R_CF_1632_CF_999$</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="frame3">
+<div style="float: left; width: 65%; margin-top:15px; margin-right: 8px; ">
+<table class="left-bottom-none">
+	<tbody>
+		<tr>
+			<td class="top-line" style="width: 58px; height:20px;">治　具</td>
+			<td style="width: 58px;">前&nbsp;&nbsp;G</td>
+			<td style="width: 58px;">下　研</td>
+			<td style="width: 58px;">鍍　金</td>
+			<td style="width: 58px;">鍍　金</td>
+			<td style="width: 58px;">仕上 G</td>
+			<td style="width: 58px;">仕　研</td>
+			<td class="bottom-none">検　査</td>
+		</tr>
+		<tr>
+			<td class="top-line" style="height:55px;"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="bottom-none"></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="float: right; width:240px;">
+<table class="bottom-none" style=" margin: 50 5 0 auto;">
+	<tbody>
+		<tr>
+			<td style="width: 78px; height: 25px;">発行番号</td>
+			<td>$R_CF_1632_SALESORDER_NO$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="frame4" style="width:100%; margin-top:10px;">
+<table style="border-collapse: collapse; width: 100%; border: 1px solid orangered;">
+	<tbody>
+		<tr>
+			<td style="height: 20px; border: 1px solid orangered;">備考</td>
+		</tr>
+		<tr>
+			<td style="height: 800px; border: 1px solid orangered; vertical-align: top; text-align: left; padding: 1em;">$PROJECT_CF_1966$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</body>
+</html>
