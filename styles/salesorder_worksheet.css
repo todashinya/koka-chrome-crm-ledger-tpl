@@ -1,0 +1,356 @@
+/* 作業票 */
+
+div.frame{
+    width: 100%;
+    border: 2px solid orangered;
+    border-top: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    
+    div.frame1{
+    width: 100%;
+    border: 2px solid orangered;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    div.frame2{
+    width: 100%;
+    border:2px solid orangered;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    div.frame3{
+    width: 100%;
+    border:2px solid orangered;
+    border-top: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    
+    
+    div.top-none{
+    width: 100%;
+    border:1px solid orangered;
+    border-top: 0px;
+    border-collapse: collapse;
+    }
+    
+    
+    table{
+    width: 100%;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 12px;
+    }
+    
+    table.tab{
+    border: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    table.tab-f8{
+    border: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 8px;
+    }
+    
+    table.tab-f10{
+    border: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 10px;
+    }
+    
+    table.left-bottom-none{
+    border:1px solid orangered;
+    border-left: 0px ;
+    border-bottom: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    table.right-bottom-none{
+    border:1px solid orangered;
+    border-right: 0px ;
+    border-bottom: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    table.bottom-none{
+    border:1px solid orangered;
+    border-bottom: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    td {
+    border: 1px solid orangered;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    }
+    
+    td.sell{
+    border: 1px solid orangered;
+    border-collapse: collapse;
+    }
+    
+    td.right-line {
+    border: 1px solid orangered;
+    border-top:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    }
+    
+    td.left-line {
+    border: 1px solid orangered;
+    border-top:0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-collapse: collapse;
+    }
+    
+    
+    td.top-line {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    }
+    
+    td.top-line2 {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    font-size: 14px;
+    }
+    
+    td.top-bottom-line {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    }
+    
+    td.bottom-line {
+    border-bottom: 2px solid orangered;
+    Border-top:0px;
+    border-left:0px;
+    border-collapse: collapse;
+    }
+    
+    td.none-line{
+    border: 0px;
+    }
+    
+    td.top-none{
+    border: 1px solid orangered;
+    border-left: 0px ;
+    border-bottom: 0px ;
+    border-top: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    
+    }
+    
+    td.left-none{
+    border: 1px solid orangered;
+    border-left: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    td.right-none{
+    border: 1px solid orangered;
+    border-right: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    td.bottom-none{
+    border: 1px solid orangered;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    td.right-bottom-none{
+    border: 1px solid orangered;
+    border-bottom: 0px ;
+    border-right: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+    td.top-bottom-b{
+    border: 0px;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    }
+    
+    
+    /* 背景付きセル */
+    
+    td.title {
+    border: 1px solid orangered;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-sell{
+    border: 1px solid orangered;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-right-line {
+    border: 1px solid orangered;
+    border-top:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-left-line {
+    border: 1px solid orangered;
+    border-top:0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-top-line {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-top-line2 {
+    border: 1px solid rgb(248, 219, 205); ;
+    border-right:0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-top-line3 {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-bottom: 1px solid rgb(248, 219, 205);
+    border-left: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    
+    td.title-top-bottom-line {
+    border: 1px solid orangered;
+    border-right:0px;
+    border-left: 0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-bottom-line {
+    border-bottom: 2px solid orangered;
+    Border-top:0px;
+    border-left:0px;
+    border-collapse: collapse;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-none-line{
+    border: 0px;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-top-none{
+    border: 1px solid orangered;
+    border-left: 0px ;
+    border-bottom: 0px ;
+    border-top: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-left-none{
+    border: 1px solid orangered;
+    border-left: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-right-none{
+    border: 1px solid orangered;
+    border-right: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-bottom-none{
+    border: 1px solid orangered;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-right-bottom-none{
+    border: 1px solid orangered;
+    border-bottom: 0px ;
+    border-right: 0px ;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
+    
+    td.title-top-bottom-b{
+    border: 0px;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    background-color: rgb(248, 219, 205);
+    font-size: 10px;
+    }
